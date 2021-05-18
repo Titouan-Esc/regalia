@@ -17,3 +17,7 @@ main {
 #anime {
   width: 80%;
 }
+
+.music {
+  display: none;
+}
