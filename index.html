@@ -8,9 +8,30 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- ! Main plus div qui va contenir notre animation d'entrée -->
     <main>
       <div id="anime"></div>
     </main>
+
+    <!-- ! Div qui va contenir notre son d'entrée -->
+    <div>
+      <object
+        data="sounddesign_audio3_regalia.mp3"
+        type="audio/x-mpeg"
+        width="0"
+        height="0"
+      >
+        <param name="src" value="sounddesign_audio3_regalia.mp3" />
+        <param name="controls" value="console" />
+        <param name="autostart" value="true" />
+        <param name="loop" value="false" />
+        <script type="text/javascript">
+          document.write(
+            '<embed src="sounddesign_audio3_regalia.mp3" width="0" height="0" controls="console" loop="false" autostart="true" ></embed>'
+          );
+        </script>
+      </object>
+    </div>
 
     <script src="lottie.js"></script>
     <script>
