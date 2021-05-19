@@ -18,6 +18,18 @@ main {
   width: 80%;
 }
 
+.container {
+  position: absolute;
+  left: 50% calc(-50%);
+  top: 43%;
+}
+
+.heading {
+  color: rgb(10, 22, 239);
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .music {
   display: none;
 }
