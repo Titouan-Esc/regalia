@@ -6,6 +6,7 @@ const animation = bodymovin.loadAnimation({
   path: "data.json",
 });
 
+// ! Js pour le texte animé
 const resolver = {
   resolve: function resolve(options, callback) {
     // The string to resolve
@@ -44,7 +45,7 @@ const resolver = {
         } else if (typeof callback === "function") {
           callback(); 
         }
-      }, timeout);
+      }, options.timeout);
     };
     
     function doResolverEffect(options, callback) {
@@ -69,12 +70,15 @@ const resolver = {
   } 
 }
 
+
 /* Some GLaDOS quotes from Portal 2 chapter 9: The Part Where He Kills You
  * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
  */
 const strings = [
+  'Bienvenue je suis Titouan Escorneboueu',
   'Bienvenue dans la Regalia',
-  'Veuillez composer le code pour entrer dans la Regalia'
+  'Veuillez composer le code pour entrer dans la Regalia',
+
 ];
 
 let counter = 0;
@@ -103,9 +107,41 @@ function callback() {
       counter = 0;
     }
     
+    console.log(counter);
     let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
-    resolver.resolve(nextOptions);
+    resolver.resolve(nextOptions, callback);
   }, 3000);
 }
 
-resolver.resolve(options);
+
+resolver.resolve(options, callback);
+
+// ? Mesure le temps pour l'apparition du texte
+
+function text() {
+  document.querySelector('[data-target-resolver]').style.display = 'inline';
+}
+
+setTimeout(() => {
+  text();
+}, 8000);
+
+function text2() {
+  document.querySelector('[data-target-resolver]').style.display = 'none';
+}
+
+setTimeout(() => {
+  text2();
+}, 19000);
+
+
+
+// ! Script pour le code qui amène à la video youtube
+
+function afficherInput() {
+  document.getElementById('code').style.display = 'inline';
+}
+
+setTimeout(() => {
+  afficherInput();
+}, 19000);

@@ -18,18 +18,30 @@ main {
   width: 80%;
 }
 
-.container {
+.heading {
+  display: none;
   position: absolute;
   left: 50% calc(-50%);
   top: 43%;
-}
-
-.heading {
   color: rgb(10, 22, 239);
   font-size: 20px;
   font-weight: 300;
 }
 
+form {
+  display: none;
+  position: absolute;
+  left: 50% calc(-50%);
+  top: 42%;
+}
+
+form input {
+  width: 2.5vw;
+  height: 5vh;
+  border: 1px solid rgb(10, 22, 239);
+  background-color: black;
+  margin: 0 10px;
+}
 .music {
   display: none;
 }
