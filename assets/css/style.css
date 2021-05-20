@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "pala";
+  src: url("../fonts/pala.ttf");
+}
+
+@font-face {
+  font-family: "palab";
+  src: url("../fonts/palab.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,9 +48,13 @@ form {
 form input {
   width: 2.5vw;
   height: 5vh;
-  border: 1px solid rgb(10, 22, 239);
+  border: 2px solid rgb(10, 22, 239);
   background-color: black;
   margin: 0 10px;
+  color: rgb(10, 22, 239);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "pala";
 }
 .music {
   display: none;
