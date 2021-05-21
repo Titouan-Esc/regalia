@@ -136,11 +136,31 @@ setTimeout(() => {
 
 
 
-// ! Script pour le code qui amène à la video youtube
+// ! Script pour le code qui affiche mon input
 
 function afficherInput() {
   document.getElementById('code').style.display = 'inline';
 }
+
+const code1 = document.getElementsByClassName('input1');
+const code2 = document.getElementsByClassName('input2');
+const code3 = document.getElementsByClassName('input3');
+const code4 = document.getElementsByClassName('input4');
+const code5 = document.getElementsByClassName('input5');
+const code6 = document.getElementsByClassName('input6');
+const code7 = document.getElementsByClassName('input7');
+
+const result = `${code1} ${code2} ${code3} ${code4} ${code5} ${code6} ${code7}`;
+
+function chiffreCode(){
+  if(result == `18 5 7 1 12 9 1`) {
+    document.write
+
+  }else{
+    alert("Vous n'avez pas rentrer de code");
+  }
+}
+
 
 setTimeout(() => {
   afficherInput();
