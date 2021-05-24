@@ -141,25 +141,35 @@ function afficherInput() {
   document.getElementById('code').style.display = 'inline';
 }
 
+const inpt1 = document.querySelector('#input1').value = '18';
+const inpt2 = document.querySelector('#input2').value = '5';
+const inpt3 = document.querySelector('#input3').value = '7';
+const inpt4 = document.querySelector('#input4').value = '1';
+const inpt5 = document.querySelector('#input5').value = '12';
+const inpt6 = document.querySelector('#input6').value = '9';
+const inpt7 = document.querySelector('#input7').value = '1';
 
-const code1 = document.getElementById('input1').value="18";
-const code2 = document.getElementById('input2').value="5";
-const code3 = document.getElementById('input3').value="7";
-const code4 = document.getElementById('input4').value="1";
-const code5 = document.getElementById('input5').value="12";
-const code6 = document.getElementById('input6').value="9";
-const code7 = document.getElementById('input7').value="1";
+const result = {inpt1, inpt2, inpt3, inpt4, inpt5, inpt6, inpt7};
 
-if(code1 == '18' && code2 == '5' && code3 == '7' && code4 == '1' && code5 == '12' && code6 == '9' && code7 == '1') {
-  const ifrm = document.createElement('iframe');
-  ifrm.setAttribute('src', 'https://www.youtube.com/watch?v=g8znXUnkZvc');
-  ifrm.style.width = '560px';
-  ifrm.style.height = '315px';
-}else{
-  setTimeout(() => {
-    alert("Vous n'avez pas rentré de code");
-  }, 29000);
+console.log(Object.values(result));
+  
+function handleInput(e) {
+  e.preventDefault;
+  
+  if(result == ['18', '5', '7', '1', '12', '9', '1']) {
+    console.log('ok');
+    const ifrm = document.createAttribute('iframe');
+    ifrm.setAttribute('src', 'https://www.youtube.com/watch?v=XsD_tty6Hco');
+    ifrm.style.width = '560px';
+    ifrm.style.height = '315px';
+    document.body.appendChild(ifrm);
+  }else {
+    // setTimeout(() => {
+    //   alert("Vous n'avez entré aucun code");
+    // }, 29000);
+  }
 }
+
 
 
 

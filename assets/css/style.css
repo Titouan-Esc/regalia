@@ -39,7 +39,7 @@ main {
 }
 
 form {
-  display: none;
+  /* display: none; */
   position: absolute;
   left: 50% calc(-50%);
   top: 42%;
