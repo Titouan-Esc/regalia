@@ -24,6 +24,13 @@ main {
   background-color: black;
 }
 
+main iframe {
+  width: 50vw;
+  height: 50vh;
+  display: none;
+  border: 3px solid rgb(10, 22, 239);
+}
+
 #anime {
   width: 80%;
 }
@@ -39,14 +46,14 @@ main {
 }
 
 form {
-  /* display: none; */
+  display: none;
   position: absolute;
   left: 50% calc(-50%);
   top: 42%;
 }
 
 form input {
-  width: 2.5vw;
+  /* width: 2.5vw; */
   height: 5vh;
   border: 2px solid rgb(10, 22, 239);
   background-color: black;

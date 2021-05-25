@@ -78,6 +78,8 @@ const strings = [
   'Bienvenue je suis Titouan Escorneboueu',
   'Bienvenue dans la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
+  'Identification en cours...',
+  'Identification validée'
 
 ];
 
@@ -141,38 +143,30 @@ function afficherInput() {
   document.getElementById('code').style.display = 'inline';
 }
 
-const inpt1 = document.querySelector('#input1').value = '18';
-const inpt2 = document.querySelector('#input2').value = '5';
-const inpt3 = document.querySelector('#input3').value = '7';
-const inpt4 = document.querySelector('#input4').value = '1';
-const inpt5 = document.querySelector('#input5').value = '12';
-const inpt6 = document.querySelector('#input6').value = '9';
-const inpt7 = document.querySelector('#input7').value = '1';
+const form = document.querySelector('[id="code"]');
+const inputs = form.querySelectorAll('input');
 
-const result = {inpt1, inpt2, inpt3, inpt4, inpt5, inpt6, inpt7};
-
-console.log(Object.values(result));
-  
 function handleInput(e) {
-  e.preventDefault;
+  const input = e.target.value;
+  const result = `${input}`;
   
-  if(result == ['18', '5', '7', '1', '12', '9', '1']) {
-    console.log('ok');
-    const ifrm = document.createAttribute('iframe');
-    ifrm.setAttribute('src', 'https://www.youtube.com/watch?v=XsD_tty6Hco');
-    ifrm.style.width = '560px';
-    ifrm.style.height = '315px';
-    document.body.appendChild(ifrm);
-  }else {
-    // setTimeout(() => {
-    //   alert("Vous n'avez entré aucun code");
-    // }, 29000);
+  if(result == '18 5 7 1 12 9 1') {
+    document.querySelector('[data-target-resolver]').style.display = 'inline';
+
+    function afficherVideo() {
+      document.getElementById('video').style.display = 'flex';
+      document.getElementById('anime').style.display = 'none';
+      document.querySelector('[data-target-resolver]').style.display = 'none';
+    }
+    setTimeout(() => {
+      afficherVideo();
+    }, 5000);
+
+    document.getElementById('code').style.display = 'none';
   }
 }
 
-
-
-
+form.addEventListener('input', handleInput);
 
 
 setTimeout(() => {
