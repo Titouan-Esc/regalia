@@ -75,9 +75,10 @@ const resolver = {
  * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
  */
 const strings = [
-  'Bienvenue je suis Titouan Escorneboueu',
+  '                                      ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
+  '                                      ',
   'Identification en cours...',
   'Identification validée'
 
@@ -125,7 +126,7 @@ function text() {
 
 setTimeout(() => {
   text();
-}, 9500);
+}, 8700);
 
 function text2() {
   document.querySelector('[data-target-resolver]').style.display = 'none';
@@ -133,7 +134,7 @@ function text2() {
 
 setTimeout(() => {
   text2();
-}, 19000);
+}, 22000);
 
 
 
@@ -160,7 +161,7 @@ function handleInput(e) {
     }
     setTimeout(() => {
       afficherVideo();
-    }, 8000);
+    }, 11000);
 
     document.getElementById('code').style.display = 'none';
   }
@@ -171,4 +172,4 @@ form.addEventListener('input', handleInput);
 
 setTimeout(() => {
   afficherInput();
-}, 19000);
+}, 22000);
