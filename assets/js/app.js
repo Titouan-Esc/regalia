@@ -76,7 +76,7 @@ const resolver = {
  */
 const strings = [
   'Bienvenue je suis Titouan Escorneboueu',
-  'Bienvenue dans la Regalia',
+  'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
   'Identification en cours...',
   'Identification validée'
@@ -111,7 +111,7 @@ function callback() {
     
     let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
     resolver.resolve(nextOptions, callback);
-  }, 3000);
+  }, 4000);
 }
 
 
@@ -125,7 +125,7 @@ function text() {
 
 setTimeout(() => {
   text();
-}, 8000);
+}, 9500);
 
 function text2() {
   document.querySelector('[data-target-resolver]').style.display = 'none';
@@ -150,7 +150,7 @@ function handleInput(e) {
   const input = e.target.value;
   const result = `${input}`;
   
-  if(result == '18 5 7 1 12 9 1') {
+  if(result == '185711291') {
     document.querySelector('[data-target-resolver]').style.display = 'inline';
 
     function afficherVideo() {
@@ -160,7 +160,7 @@ function handleInput(e) {
     }
     setTimeout(() => {
       afficherVideo();
-    }, 5000);
+    }, 8000);
 
     document.getElementById('code').style.display = 'none';
   }

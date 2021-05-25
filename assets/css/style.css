@@ -25,14 +25,14 @@ main {
 }
 
 main iframe {
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: 70vh;
   display: none;
   border: 3px solid rgb(10, 22, 239);
 }
 
 #anime {
-  width: 80%;
+  width: 85%;
 }
 
 .heading {
@@ -41,7 +41,7 @@ main iframe {
   left: 50% calc(-50%);
   top: 43%;
   color: rgb(10, 22, 239);
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 300;
 }
 
