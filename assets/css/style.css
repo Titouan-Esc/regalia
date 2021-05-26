@@ -39,7 +39,7 @@ main iframe {
   display: none;
   position: absolute;
   left: 50% calc(-50%);
-  top: 42.5%;
+  top: 42.4%;
   color: rgb(10, 22, 239);
   font-family: "pala";
   font-size: 20px;
@@ -50,7 +50,7 @@ form {
   display: none;
   position: absolute;
   left: 50% calc(-50%);
-  top: 42%;
+  top: 41.8%;
 }
 
 form input {

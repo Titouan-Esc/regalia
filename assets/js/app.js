@@ -78,7 +78,7 @@ const strings = [
   '                                      ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
-  '                                      ',
+  '                                                     ',
   'Identification en cours...',
   'Identification validée'
 
