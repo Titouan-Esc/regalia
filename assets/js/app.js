@@ -134,7 +134,7 @@ function text2() {
 
 setTimeout(() => {
   text2();
-}, 17000);
+}, 18000);
 
 
 
@@ -183,4 +183,4 @@ setTimeout(() => {
 
 setTimeout(() => {
   afficherInput();
-}, 17000);
+}, 18000);
