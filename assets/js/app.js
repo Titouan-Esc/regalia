@@ -75,10 +75,10 @@ const resolver = {
  * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
  */
 const strings = [
-  '                                      ',
+  '        ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
-  '                                                                   ',
+  '                                                     ',
   'Identification en cours...',
   'Identification validée'
 
@@ -126,7 +126,7 @@ function text() {
 
 setTimeout(() => {
   text();
-}, 8700);
+}, 3500);
 
 function text2() {
   document.querySelector('[data-target-resolver]').style.display = 'none';
@@ -134,7 +134,7 @@ function text2() {
 
 setTimeout(() => {
   text2();
-}, 22000);
+}, 17000);
 
 
 
@@ -162,7 +162,7 @@ function handleInput(e) {
     }
     setTimeout(() => {
       afficherVideo();
-    }, 14000);
+    }, 13000);
     
     document.getElementById('code').style.display = 'none';
   }
@@ -179,8 +179,8 @@ function activerSon() {
 
 setTimeout(() => {
   activerSon();
-}, 37000)
+}, 32500)
 
 setTimeout(() => {
   afficherInput();
-}, 22000);
+}, 17000);
