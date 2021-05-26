@@ -78,7 +78,7 @@ const strings = [
   '                                      ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
-  '                                                     ',
+  '                                                                   ',
   'Identification en cours...',
   'Identification validée'
 
@@ -162,7 +162,7 @@ function handleInput(e) {
     }
     setTimeout(() => {
       afficherVideo();
-    }, 15000);
+    }, 14000);
     
     document.getElementById('code').style.display = 'none';
   }
@@ -179,7 +179,7 @@ function activerSon() {
 
 setTimeout(() => {
   activerSon();
-}, 35000)
+}, 37000)
 
 setTimeout(() => {
   afficherInput();
