@@ -151,6 +151,7 @@ function handleInput(e) {
   const input = e.target.value;
   const result = `${input}`;
   
+  // Condition pour la validation du code
   if(result == '185711291') {
     document.querySelector('[data-target-resolver]').style.display = 'inline';
 
