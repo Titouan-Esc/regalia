@@ -154,11 +154,7 @@ function handleInput(e) {
   if(result == '185711291') {
     document.querySelector('[data-target-resolver]').style.display = 'inline';
 
-    const son = document.createElement('source');
-    son.src = 'sounddesign_audio1_regalia.mp3';
-    son.type = 'audio/mpeg';
-    document.getElementById('media').append(son);
-
+    
     function afficherVideo() {
       document.getElementById('video').style.display = 'flex';
       document.getElementById('anime').style.display = 'none';
@@ -166,14 +162,24 @@ function handleInput(e) {
     }
     setTimeout(() => {
       afficherVideo();
-    }, 12000);
-
+    }, 15000);
+    
     document.getElementById('code').style.display = 'none';
   }
 }
 
 form.addEventListener('input', handleInput);
 
+function activerSon() {
+  const son = document.createElement('source');
+  son.src = 'sounddesign_audio1_regalia.mp3';
+  son.type = 'audio/mpeg';
+  document.getElementById('media').append(son);
+}
+
+setTimeout(() => {
+  activerSon();
+}, 35000)
 
 setTimeout(() => {
   afficherInput();
