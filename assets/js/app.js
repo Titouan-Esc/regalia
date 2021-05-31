@@ -171,6 +171,7 @@ function handleInput(e) {
 
 form.addEventListener('input', handleInput);
 
+// ! Function pour créer la son lors de l'identification
 function activerSon() {
   const son = document.createElement('source');
   son.src = 'sounddesign_audio1_regalia.mp3';
@@ -178,10 +179,49 @@ function activerSon() {
   document.getElementById('media').append(son);
 }
 
+// ! Function pour créer la son lors du text
+function toucheSon() {
+  const tuche = document.createElement('source');
+  tuche.src = 'Bass_Drop_01.mp3';
+  tuche.type = 'audio/mpeg';
+  document.getElementById('touche').append(tuche);
+}
+
+// ! Function pour mettre sur pause le son des touches
+function enleverToucheSon() {
+  document.getElementById('touche').pause();
+}
+
+function playLesTouches() {
+  document.getElementById('touche').play();
+}
+
+// ! Set time out pour activer le son des touches à 5300 milli seconde
+setTimeout(() => {
+  toucheSon();
+}, 5300)
+
+// ! Set time out pour mettre le son en pause au bout de 16300 milli seconde
+setTimeout(() => {
+  enleverToucheSon();
+}, 16300)
+
+// ! Set time out pour activer le son des touches pour le deuxième texte
+setTimeout(() => {
+  playLesTouches();
+}, 26000)
+
+// ! Set time out pour mettre sur pauve à la deuxième fois
+setTimeout(() => {
+  enleverToucheSon();
+}, 32500)
+
+// ! Set time out pour activer le son de l'identification 
 setTimeout(() => {
   activerSon();
 }, 32500)
 
+// ! Set time out pour l'appartition du l'input pour le code
 setTimeout(() => {
   afficherInput();
 }, 18000);
