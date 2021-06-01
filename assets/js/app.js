@@ -192,9 +192,19 @@ function enleverToucheSon() {
   document.getElementById('touche').pause();
 }
 
+// ! Function pour mettre en play le son des touches
 function playLesTouches() {
   document.getElementById('touche').play();
 }
+
+// ! Function pour lancer le son 1 plaus son set time out à 0 milli seconde
+function playSonOne() {
+  document.getElementById('sonOne').play();
+}
+
+setTimeout(() => {
+  playSonOne();
+}, 0)
 
 // ! Set time out pour activer le son des touches à 5300 milli seconde
 setTimeout(() => {
