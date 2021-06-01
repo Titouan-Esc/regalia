@@ -1,11 +1,11 @@
 /* ? 1 screen */
 @media screen and (max-width: 1441px) {
   .heading {
-    top: 43.5%;
+    top: 42%;
   }
 
   form {
-    top: 43.5%;
+    top: 42%;
   }
 
   form input {
@@ -20,8 +20,12 @@
   }
 
   .heading {
-    top: 44.5%;
+    top: 42.5%;
     font-size: 17px;
+  }
+
+  form {
+    top: 42.5%;
   }
 
   main iframe {
@@ -37,7 +41,7 @@
   }
 
   form {
-    top: 44%;
+    top: 42.7%;
   }
 
   form input {
@@ -49,11 +53,11 @@
 @media screen and (max-width: 965px) {
   .heading {
     font-size: 15px;
-    top: 45%;
+    top: 43.5%;
   }
 
   form {
-    top: 44.7%;
+    top: 43.8%;
   }
 
   form input {
@@ -71,11 +75,11 @@
 @media screen and (max-width: 813px) {
   .heading {
     font-size: 13px;
-    top: 45.7%;
+    top: 44.7%;
   }
 
   form {
-    top: 45.3%;
+    top: 44.5%;
   }
 
   form input {
@@ -91,12 +95,12 @@
 /* ? 6 screen */
 @media screen and (max-width: 711px) {
   .heading {
-    top: 46.1%;
+    top: 45%;
     font-size: 12px;
   }
 
   form {
-    top: 46%;
+    top: 45%;
   }
 
   form input {
