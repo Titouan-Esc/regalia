@@ -22,6 +22,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: black;
+  background-size: cover;
 }
 
 main iframe {
@@ -39,7 +40,7 @@ main iframe {
   display: none;
   position: absolute;
   left: 50% calc(-50%);
-  top: 43%;
+  top: 42.5%;
   color: rgb(10, 22, 239);
   font-family: "pala";
   font-size: 20px;
