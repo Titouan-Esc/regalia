@@ -1,0 +1,112 @@
+/* ? 1 screen */
+@media screen and (max-width: 1441px) {
+  .heading {
+    top: 43.5%;
+  }
+
+  form {
+    top: 43.5%;
+  }
+
+  form input {
+    height: 4vh;
+  }
+}
+
+/* ? 2 screen */
+@media screen and (max-width: 1255px) {
+  #anime {
+    width: 90%;
+  }
+
+  .heading {
+    top: 44.5%;
+    font-size: 17px;
+  }
+
+  main iframe {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+
+/* ? 3 screen */
+@media screen and (max-width: 1117px) {
+  #anime {
+    width: 100%;
+  }
+
+  form {
+    top: 44%;
+  }
+
+  form input {
+    height: 3.5vh;
+  }
+}
+
+/* ? 4 screen */
+@media screen and (max-width: 965px) {
+  .heading {
+    font-size: 15px;
+    top: 45%;
+  }
+
+  form {
+    top: 44.7%;
+  }
+
+  form input {
+    height: 3vh;
+    font-size: 1.3em;
+  }
+
+  main iframe {
+    width: 75vw;
+    height: 50vh;
+  }
+}
+
+/* ? 5 screen */
+@media screen and (max-width: 813px) {
+  .heading {
+    font-size: 13px;
+    top: 45.7%;
+  }
+
+  form {
+    top: 45.3%;
+  }
+
+  form input {
+    font-size: 1em;
+  }
+
+  main iframe {
+    width: 70vw;
+    height: 40vh;
+  }
+}
+
+/* ? 6 screen */
+@media screen and (max-width: 711px) {
+  .heading {
+    top: 46.1%;
+    font-size: 12px;
+  }
+
+  form {
+    top: 46%;
+  }
+
+  form input {
+    width: 23vw;
+    height: 2.5vh;
+    font-size: 0.8em;
+  }
+
+  main iframe {
+    width: 75vw;
+    height: 35vh;
+  }
+}
