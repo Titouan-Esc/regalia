@@ -8,6 +8,11 @@
   src: url("../fonts/palab.ttf");
 }
 
+@font-face {
+  font-family: "palatino";
+  src: url("../fonts/Palatino.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +27,11 @@ main {
   justify-content: center;
   align-items: center;
   background-color: black;
-  background-size: cover;
 }
 
 main iframe {
-  width: 60vw;
-  height: 70vh;
+  width: 65vw;
+  height: 65vh;
   display: none;
   border: 3px solid rgb(10, 22, 239);
 }
@@ -67,4 +71,40 @@ form input {
 }
 .music {
   display: none;
+}
+
+.conteneur_iframe_texte {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contenu_video {
+  display: none;
+  justify-content: center;
+}
+
+#contenu_video img {
+  margin-right: 20px;
+}
+
+.texte_video {
+  width: 50%;
+  color: rgb(10, 22, 239);
+}
+
+.texte_video h1 {
+  font-size: 25px;
+  font-family: "palatino";
+  margin-bottom: 5px;
+}
+
+.texte_video p {
+  font-family: "palatino";
+}
+
+.duree_video {
+  margin-top: 40px;
 }

@@ -160,7 +160,7 @@ function handleInput(e) {
       document.getElementById('video').style.display = 'flex';
       document.getElementById('anime').style.display = 'none';
       document.querySelector('[data-target-resolver]').style.display = 'none';
-      document.getElementById('back').style.backgroundImage = "url('..assets/images/rayon_bis.png')";
+      document.getElementById('contenu_video').style.display = 'flex';
     }
     setTimeout(() => {
       afficherVideo();
