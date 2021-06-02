@@ -82,16 +82,17 @@ form input {
 }
 
 #contenu_video {
+  width: 65vw;
   display: none;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #contenu_video img {
-  margin-right: 20px;
+  width: 10vw;
 }
 
 .texte_video {
-  width: 50%;
+  width: 80%;
   color: rgb(10, 22, 239);
 }
 
@@ -102,6 +103,7 @@ form input {
 }
 
 .texte_video p {
+  font-size: 17px;
   font-family: "palatino";
 }
 
