@@ -1,3 +1,14 @@
+/* ? 0 screen */
+@media screen and (max-width: 1497px) {
+  .heading {
+    top: 41.5%;
+  }
+
+  form {
+    top: 41.5%;
+  }
+}
+
 /* ? 1 screen */
 @media screen and (max-width: 1441px) {
   .heading {
