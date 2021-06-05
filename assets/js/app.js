@@ -1,10 +1,27 @@
-const animation = bodymovin.loadAnimation({
-  container: document.getElementById("anime"),
-  renderer: "svg",
-  autoplay: true,
-  loop: false,
-  path: "data.json",
-});
+const button_entree = document.querySelector('#button_entree');
+
+button_entree.addEventListener('click', function() {
+
+  // * Rendre la div entree invisible
+  document.getElementById('entree').style.display = 'none';
+
+  // * Création de l'animation au click de notre souris
+  const animation = bodymovin.loadAnimation({
+    container: document.getElementById("anime"),
+    renderer: "svg",
+    autoplay: true,
+    loop: false,
+    path: "data.json",
+  });
+
+  // * Création du son d'entrée
+  const son = document.createElement('source');
+  son.src = "sounddesign_audio3_regalia (mp3cut (mp3cut.net).mp3";
+  son.type = "audio/mpeg";
+  document.getElementById('sonOne').append(son);
+})
+
+
 
 // ! Js pour le texte animé
 const resolver = {
@@ -75,7 +92,7 @@ const resolver = {
  * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
  */
 const strings = [
-  '        ',
+  '                           ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
   '                                                     ',
@@ -198,19 +215,10 @@ function playLesTouches() {
   document.getElementById('touche').play();
 }
 
-// ! Function pour lancer le son 1 plaus son set time out à 0 milli seconde
-function playSonOne() {
-  document.getElementById('sonOne').play();
-}
-
-setTimeout(() => {
-  playSonOne();
-}, 0)
-
 // ! Set time out pour activer le son des touches à 5300 milli seconde
 setTimeout(() => {
   toucheSon();
-}, 5300)
+}, 6000)
 
 // ! Set time out pour mettre le son en pause au bout de 16300 milli seconde
 setTimeout(() => {
@@ -222,7 +230,7 @@ setTimeout(() => {
   playLesTouches();
 }, 26000)
 
-// ! Set time out pour mettre sur pauve à la deuxième fois
+// ! Set time out pour mettre sur pause à la deuxième fois
 setTimeout(() => {
   enleverToucheSon();
 }, 32500)
@@ -230,7 +238,7 @@ setTimeout(() => {
 // ! Set time out pour activer le son de l'identification 
 setTimeout(() => {
   activerSon();
-}, 32500)
+}, 35000)
 
 // ! Set time out pour l'appartition du l'input pour le code
 setTimeout(() => {

@@ -11,6 +11,14 @@
   <body>
     <!-- ! Main plus div qui va contenir notre animation d'entrée -->
     <main id="back">
+      <!-- ? Div contenant le logo et le bouton d'entrée -->
+      <div class="entree" id="entree">
+        <img src="assets/images/logo_video_regalia.svg" alt="Logo d'entrée" />
+        <div class="button">
+          <button id="button_entree">Entrer dans la Regalia</button>
+        </div>
+      </div>
+
       <div id="anime"></div>
       <h1 class="heading" data-target-resolver></h1>
       <form id="code">
@@ -50,12 +58,7 @@
     </main>
 
     <!-- ! Div qui va contenir notre son d'entrée -->
-    <audio autoplay="autoplay" id="sonOne">
-      <source
-        src="sounddesign_audio3_regalia (mp3cut (mp3cut.net).mp3"
-        type="audio/mp3"
-      />
-    </audio>
+    <audio autoplay="autoplay" id="sonOne"></audio>
     <audio autoplay id="media"></audio>
     <audio autoplay loop id="touche"></audio>
 
