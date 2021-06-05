@@ -92,7 +92,7 @@ const resolver = {
  * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
  */
 const strings = [
-  '                           ',
+  '                                       ',
   'Accédez à la Regalia',
   'Veuillez composer le code pour entrer dans la Regalia',
   '                                                     ',
@@ -218,17 +218,17 @@ function playLesTouches() {
 // ! Set time out pour activer le son des touches à 5300 milli seconde
 setTimeout(() => {
   toucheSon();
-}, 6000)
+}, 7000)
 
 // ! Set time out pour mettre le son en pause au bout de 16300 milli seconde
 setTimeout(() => {
   enleverToucheSon();
-}, 16300)
+}, 18000)
 
 // ! Set time out pour activer le son des touches pour le deuxième texte
 setTimeout(() => {
   playLesTouches();
-}, 26000)
+}, 28000)
 
 // ! Set time out pour mettre sur pause à la deuxième fois
 setTimeout(() => {

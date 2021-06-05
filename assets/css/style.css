@@ -42,12 +42,13 @@ main {
 }
 
 .button button {
-  width: 17vw;
+  /* width: 16vw; */
   font-family: "palatino";
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(10, 22, 239);
   background-color: black;
   border: 1px solid rgb(10, 22, 239);
+  padding: 7px;
 }
 
 .button button:hover {
